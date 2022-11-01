@@ -1,0 +1,17 @@
+<p #temp1  [ngStyle]=" {backgroundColor: getColor()}"  [ngClass]="{'myClass': display}" >info-text works!</p>
+
+my tests: {{ myText }}
+
+<button type="button" (click)="onClick()">Send Value to Parent</button>
+
+Item from the service: {{displayItem}}
+<div *ngIf="display">
+    only displayed if button is clicked
+</div>
+<ul>
+    <li *ngFor="let i of items">
+        <div *ngIf="display">
+            {{i}}
+        </div>
+    </li>
+</ul>
